@@ -1,0 +1,64 @@
+body{
+	font-family: "Lucida Console",Monaco, monospace;
+	font-size:14px;
+}
+.barra {
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;http://bootsnipp.com/user/snippets/z79Nl#
+    margin-bottom: -1px;
+    height: 59px;
+   background-color: #0072b0;
+    line-height: 55px;
+    position: relative;
+}
+
+
+.dv-admin{
+	float:left;
+	font-size:18px;
+	margin-top:5px;
+}
+.dv-admin a{
+	text-decoration:none;
+	color:#fff;
+	font-size:15px;
+	font-family:"Lucida Console", Monaco, monospace;
+	letter-spacing:0.2em;
+    text-transform:uppercase;
+}
+.dv-admin a:hover{
+	color:orange;
+}
+.navbar-nav li a{
+	text-decoration:none;
+	color:#fff;
+	font-size:14px;
+	font-family:"Lucida Console", Monaco, monospace;
+	letter-spacing:0.08em;
+    text-transform:uppercase;
+}
+.navbar-nav li a:hover{
+	color:orange;
+	background:none;
+	
+}
+.navbar-nav{
+	margin-left:-50px;
+	margin-top:7px;
+}
+
+.dv-logout{
+	float:right;
+	margin-right:24px;
+	margin-top:5px;
+}
+.navbar-nav{
+	margin-left:-50px;
+	margin-top:7px;
+}
+.navbar-nav li a:active,
+.navbar-nav li a:focus{
+	text-decoration:none;
+	background-color:#00cc00;
+}

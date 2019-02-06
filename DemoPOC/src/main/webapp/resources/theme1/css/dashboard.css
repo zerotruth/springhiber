@@ -1,0 +1,187 @@
+body{
+	font-family:"Lucida Console",Monaco, monospace;
+	
+}
+.barra {
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;http://bootsnipp.com/user/snippets/z79Nl#;
+    margin-bottom: -1px;
+    height: 59px;
+   background-color: #0072b0;
+    line-height: 55px;
+    position: relative;
+}
+
+
+.dv-admin{
+	float:left;
+	font-size:16px;
+	margin-top:5px;
+}
+
+.dv-admin a{
+	text-decoration:none;
+	color:#fff;
+	font-size:15px;
+	font-family:"Lucida Console", Monaco, monospace;
+	letter-spacing:0.2em;
+    text-transform:uppercase;
+}
+.dv-admin a:hover{
+	color:orange;
+}
+#deptSumm{
+	font-family: Monaco, monospace;
+    font-size:16px;
+}
+.dv-logout{
+	float:right;
+	margin-right:24px;
+	margin-top:5px;
+}
+
+#wrapper {
+    padding-left: 70px;
+    transition: all .4s ease 0s;
+    height: 100%
+}
+
+#sidebar-wrapper {
+     margin-left:-150px;
+    width: 210px;
+    position: absolute;
+    background-color:#0072b0;
+    height: 100%;
+    transition: all .4s ease 0s;
+}
+.navbar-nav li a{
+	text-decoration:none;
+	color:#fff;
+	font-size:14px;
+	font-family:"Lucida Console", Monaco, monospace;
+	letter-spacing:0.08em;
+    text-transform:uppercase;
+}
+.navbar-nav li a:hover{
+	color:orange;
+	background:none;
+	
+}
+.navbar-nav{
+	margin-left:-50px;
+	margin-top:7px;
+}
+
+
+.sidebar-nav {
+    display: block;
+    float: left;
+    width: 220px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper.active {
+    padding-left: 130px;
+}
+#wrapper.active #sidebar-wrapper {
+    left: 150px;
+}
+#sidebar_menu li a, .sidebar-nav li a {
+    color: #fff;
+    display:block;
+    float: left;
+    text-decoration: none;
+    width: 210px;
+    background: #0072b0;
+    
+    border-top: 1px solid #fff;
+   -webkit-transition: background .5s;
+    -moz-transition: background .5s;
+    -o-transition: background .5s;
+    -ms-transition: background .5s;
+    transition: background .5s;
+}
+.sidebar-nav li {
+  line-height: 40px;
+  text-indent: 20px;
+}
+
+.sidebar-nav li a {
+  color: #fff;
+  display: block;
+  font-size:14px;
+  text-transform:uppercase;
+  font-family:"Lucida Console", Monaco, monospace;
+  text-decoration: none;
+}
+
+.sidebar-nav li a:hover {
+  color: orange;
+  background: rgba(255,255,255,0.2);
+  text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+  background-color:red;
+}
+.navbar-nav li a:active,
+.navbar-nav li a:focus {
+	text-decoration:none;
+	background-color:#00cc00;
+	color:#fff;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  line-height: 60px;
+  font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+  letter-spacing:0.1em;
+  font-family:"Lucida Console", Monaco, monospace;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+#main_icon
+{
+   float:right;
+   padding-right: 65px;
+   padding-top:20px;
+}
+.sub_icon
+{
+    float:right;
+   padding-right: 65px;
+   padding-top:10px;
+}
+#show_form{
+	display:none;
+}
+@media (max-width:768px) {
+    #wrapper {
+    padding-left: 70px;
+    transition: all .4s ease 0s;
+}
+#sidebar-wrapper {
+    left: 70px;
+}
+#wrapper.active {
+    padding-left: 150px;
+}
+#wrapper.active #sidebar-wrapper {
+    left: 150px;
+    width: 150px;
+    transition: all .4s ease 0s;
+}
+}

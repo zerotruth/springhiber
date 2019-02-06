@@ -1,0 +1,153 @@
+body{
+	font-family: "Lucida Console",Monaco, monospace;
+	font-size:13px;
+}
+.barra {
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;http://bootsnipp.com/user/snippets/z79Nl#
+    margin-bottom: -1px;
+    height: 59px;
+    background-color: #0072b0;
+    line-height: 55px;
+    position: relative;
+    
+}
+.dv-admin{
+	float:left;
+	font-size:16px;
+	margin-top:5px;
+}
+.dv-admin a{
+	text-decoration:none;
+	color:#fff;
+	font-size:15px;
+	font-family:"Lucida Console", Monaco, monospace;
+	letter-spacing:0.2em;
+    text-transform:uppercase;
+}
+.dv-admin a:hover{
+	color:orange;
+}
+.dv-logout{
+	float:right;
+	margin-right:24px;
+	margin-top:5px;
+}
+.navbar-nav li a{
+
+	text-decoration:none;
+	color:#fff;
+	font-size:14px;
+	font-family:"Lucida Console", Monaco, monospace;
+	letter-spacing:0.08em;
+    text-transform:uppercase;
+}
+.navbar-nav li a:hover{
+	color:#fff;
+	background:none;
+}
+
+.navbar-nav{
+	margin-left:-50px;
+	margin-top:7px;
+}
+.bs-example{
+    	margin:0 auto;
+    	margin-left:210px;
+    	margin-top:30px;
+    	position:relative;
+    }
+	
+	
+.form-horizontal .control-label{
+        padding-top: 7px;
+  }
+  
+ 
+
+ #backbtn{
+	width:50%;
+	margin-top:5px;
+	padding:7px;
+}
+  #sidebar-wrapper {
+	margin-left:-15px;
+   width: 210px;
+    background-color: #0072b0;
+    position: absolute;
+    height: 100%;
+   transition: all .4s ease 0s;
+}
+
+.sidebar-nav {
+    display: block;
+    float: left;
+    width: 220px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar_menu li a, .sidebar-nav li a {
+    color: #fff;
+    display: block;
+    float: left;
+    text-decoration: none;
+    width: 210px;
+    background: #0072b0;
+    border-top: 1px solid #fff;
+    -webkit-transition: background .5s;
+    -moz-transition: background .5s;
+    -o-transition: background .5s;
+    -ms-transition: background .5s;
+    transition: background .5s;
+}
+.dv-addemp{
+	font-family:"Lucida Console", Monaco, monospace;
+	font-size:17px;
+
+}
+.sidebar-nav li {
+  line-height: 40px;
+  text-indent: 20px;
+}
+
+..sidebar-nav li a {
+  color: #fff;
+  display: block;
+  font-size:14px;
+  text-transform:uppercase;
+  font-family:"Lucida Console", Monaco, monospace;
+  text-decoration: none;
+}
+
+.sidebar-nav li a:hover {
+  color: orange;
+  background: rgba(255,255,255,0.2);
+  text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+  background-color:red;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  line-height: 60px;
+  font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #fff;
+  letter-spacing:0.1em;
+  font-family:"Lucida Console", Monaco, monospace;
+}
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}

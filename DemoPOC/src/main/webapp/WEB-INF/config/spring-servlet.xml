@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:mvc="http://www.springframework.org/schema/mvc" 
+ xmlns:tx="http://www.springframework.org/schema/tx"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+ 					  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+ 					  http://www.springframework.org/schema/context 
+                      http://www.springframework.org/schema/context/spring-context-3.0.xsd 
+                      http://www.springframework.org/schema/mvc 
+                      http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+                       http://www.springframework.org/schema/tx 
+                        http://www.springframework.org/schema/tx/spring-tx.xsd">
+ 
+ 
+ 
+<mvc:resources mapping="/resources/**" location="/resources/theme1/" />
+ 
+ <mvc:annotation-driven/>
+ 
+ <context:component-scan base-package="com.application.*"/> 
+ 
+ 
+ 
+ <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+ 	<property name="prefix" value="/WEB-INF/pages/" />
+ 	<property name="suffix" value=".jsp" />
+ </bean>
+ 
+ <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
+    <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+    <property name="url" value="jdbc:mysql://localhost:3306/employee_details"/>
+    <property name="username" value="root"/>
+    <property name="password" value="root"/>
+</bean>
+<bean class="org.springframework.orm.hibernate5.LocalSessionFactoryBean" id="sessionFactory">
+            <property name="dataSource" ref="dataSource"></property>
+<!--             <property name="annotatedClasses"> -->
+<!--                 <list> -->
+<!--                     <value>com.application.model.Employee</value> -->
+<!--                 </list> -->
+<!--             </property> -->
+            <property name="hibernateProperties">
+                <props>
+                    <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+                     <prop key="hibernate.format_sql">true</prop>
+                    <prop key="hibernate.show_sql">true</prop>
+                    <prop key="hibernate.hbm2ddl.auto">update</prop>
+                </props>
+            </property>
+            <property name="packagesToScan" value="com.application.model"></property>
+        </bean>
+        
+         <bean class="org.springframework.orm.hibernate5.HibernateTransactionManager"
+            id="hibernateTransactionManager">
+            <property name="sessionFactory" ref="sessionFactory"></property>
+        </bean>
+         <tx:annotation-driven transaction-manager="hibernateTransactionManager" />
+        
+        
+   
+</beans> 
